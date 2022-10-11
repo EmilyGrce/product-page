@@ -166,6 +166,33 @@ h5 {
   font-weight: 400;
 }
 
+.content h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+/*   padding-top: 2em; */
+  padding-bottom: 1em;
+  font-size: 14px;
+/*   font-size: .75em; */
+  line-height: 2em;
+  hyphens: none;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #224229;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+}
+
 
 /* <----FOOTER----> */
 
@@ -195,7 +222,53 @@ h5 {
 
 /* Add media query for desktop */
 
-@media only screen and (min-width: 60em) {
+/* @media screen and (min-width: 60em) {
+  .nav-toggle-label {
+    display: none;
+  }
 
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(38em, 3fr) 1fr;
+  }
 
-}
+  .logo {
+    color: white;
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -0.75em;
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform ease-in-out 250ms;
+  }
+
+} */
