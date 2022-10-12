@@ -175,8 +175,37 @@ h5 {
 }
 
 p {
+  font-size: 15px;
+  line-height: 2.2em;
+  hyphens: none;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #224229;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.description {
+  padding-top: 2.5em;
+}
+
+/* .content h3 {
+  margin: 0;
+  font-weight: 400;
+} */
+
+p {
 /*   padding-top: 2em; */
-  padding-bottom: 1em;
   font-size: 15px;
   line-height: 2.2em;
   hyphens: none;
@@ -203,6 +232,8 @@ p {
 
 .content-h3 {
   padding-top: 1em;
+  margin: 0;
+  font-weight: 400;
 }
 
 dt {
@@ -218,9 +249,6 @@ dd {
   padding-bottom: 1em;
 }
 
-.whats-included p {
-  line-height: 2em;
-}
 
 /* <----BROWSE GRID----> */
 
@@ -232,14 +260,14 @@ dd {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  padding-bottom: 1em;
+  padding: 1em 0 1em;
 
 }
 
 article {
   display: flex;
   flex-direction: column;
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
 }
 
 article > img {
@@ -249,7 +277,7 @@ article > img {
 }
 
 .article-content {
-  padding: 1em;
+  padding: 1em 0 1em;
 }
 
 .plant-price {
@@ -260,9 +288,17 @@ article > img {
 
 .four-grid p {
   margin: 0 0;
-
 }
 
+.four-grid h4 {
+  margin: 0 0;
+  font-weight: 400;
+}
+
+.four-grid h5 {
+  margin: 0;
+  font-weight: 400;
+}
 
 
 
