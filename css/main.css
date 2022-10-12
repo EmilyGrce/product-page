@@ -12,7 +12,7 @@ body {
   font-weight: 300;
   line-height: 2em;
   /* font-size: 0.875em; */
-  font-size: 16px;
+  font-size: 15px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -114,6 +114,7 @@ nav a {
 
 .nav-toggle:checked ~ nav {
     transform: scale(1, 1);
+    border-top: solid 1px #000;
     border-bottom: solid 1px #000;
 }
 
@@ -176,10 +177,8 @@ h5 {
 p {
 /*   padding-top: 2em; */
   padding-bottom: 1em;
-  font-size: 14px;
-  /* font-size: 14px; */
-/*   font-size: .75em; */
-  line-height: 2.5em;
+  font-size: 15px;
+  line-height: 2.2em;
   hyphens: none;
 }
 
@@ -194,6 +193,7 @@ p {
   font-size: 15px;
   cursor: pointer;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 
@@ -207,18 +207,61 @@ p {
 
 dt {
   /* font-size: 0.875em; */
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
 dd {
   /* font-size: 0.875em; */
-  font-size: 14px;
+  font-size: 15px;
   margin: 0;
   padding-bottom: 1em;
 }
 
+.whats-included p {
+  line-height: 2em;
+}
 
+/* <----BROWSE GRID----> */
+
+.browse {
+  padding-top: 1em;
+}
+
+.four-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding-bottom: 1em;
+
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #000;
+}
+
+article > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 1em;
+}
+
+.plant-price {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.four-grid p {
+  margin: 0 0;
+
+}
 
 
 
