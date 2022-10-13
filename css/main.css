@@ -11,7 +11,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 2em;
-  /* font-size: 0.875em; */
   font-size: 15px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -261,7 +260,6 @@ dd {
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   padding: 1em 0 1em;
-
 }
 
 article {
@@ -279,11 +277,6 @@ article > img {
 .article-content {
   padding: 1em 0 1em;
 }
-
-/* .plant-price {
-  display: flex;
-  gap: 1rem;
-} */
 
 .four-grid p {
   margin: 0 0;
@@ -313,8 +306,10 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: #fff;
   text-align: center;
+  border-top: solid 1px #000;
+
 }
 
 
@@ -323,68 +318,64 @@ footer {
 
 /* Add media query for tablet */
 
-@media only screen and (min-width: 38em) {
+/* @media only screen and (min-width: 38em) { */
 
 /* <----MAY NOT NEED----> */
 
-}
 
 
 /* Add media query for desktop */
 
-/* @media screen and (min-width: 60em) {
-  .nav-toggle-label {
-    display: none;
+@media only screen and (min-width: 1280px) {
+
+.nav-toggle-label {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0 .5em;
+}
+
+nav {
+  all: unset;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(38em, 3fr) 1fr;
+nav li {
+  margin-left: 3em;
+  margin-bottom: 0;
   }
 
-  .logo {
-    color: white;
-    grid-column: 2 / 3;
-  }
+nav a {
+  opacity: 1;
+  position: relative;
+}
 
-  nav {
-    all: unset;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -0.75em;
-    transform: scale(0, 1);
-    transform-origin: center;
-    transition: transform ease-in-out 250ms;
-  }
-} */
-
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  position: absolute;
+  top: -0.75em;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform ease-in-out 250ms;
+}
+}
 
 /* <----REVIEWS----> */
 
-/* .review-grid {
+.review-grid {
   display: flex;
-} */
+  align-items: center;
+}
