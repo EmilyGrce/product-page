@@ -193,18 +193,11 @@ p {
   letter-spacing: 2px;
 }
 
-
 .description {
   padding-top: 2.5em;
 }
 
-/* .content h3 {
-  margin: 0;
-  font-weight: 400;
-} */
-
 p {
-/*   padding-top: 2em; */
   font-size: 15px;
   line-height: 2.2em;
   hyphens: none;
@@ -236,13 +229,11 @@ p {
 }
 
 dt {
-  /* font-size: 0.875em; */
   font-size: 15px;
   font-weight: 400;
 }
 
 dd {
-  /* font-size: 0.875em; */
   font-size: 15px;
   margin: 0;
   padding-bottom: 1em;
@@ -301,6 +292,10 @@ article > img {
 
 /* <----FOOTER----> */
 
+.wrapper-footer {
+  margin-top: 3em;
+}
+
 footer {
   right: 0;
   bottom: 0;
@@ -318,15 +313,7 @@ footer {
 
 /* Add media query for tablet */
 
-/* @media only screen and (min-width: 38em) { */
-
-/* <----MAY NOT NEED----> */
-
-
-
-/* Add media query for desktop */
-
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 38em) {
 
 .nav-toggle-label {
   display: none;
@@ -348,12 +335,12 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  }
+}
 
 nav li {
   margin-left: 3em;
   margin-bottom: 0;
-  }
+}
 
 nav a {
   opacity: 1;
@@ -371,11 +358,21 @@ nav a::before {
   transform-origin: center;
   transition: transform ease-in-out 250ms;
 }
-}
 
-/* <----REVIEWS----> */
+.review{
+padding-right: 4em;
+}
 
 .review-grid {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
+padding: 0;
 }
+}
+
+
+/* Add media query for desktop */
+
+/* @media only screen and (min-width: 60em){
+
+} */
