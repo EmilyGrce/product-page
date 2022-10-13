@@ -280,11 +280,10 @@ article > img {
   padding: 1em 0 1em;
 }
 
-.plant-price {
+/* .plant-price {
   display: flex;
   gap: 1rem;
-}
-
+} */
 
 .four-grid p {
   margin: 0 0;
@@ -300,9 +299,11 @@ article > img {
   font-weight: 400;
 }
 
+/* <----REVIEWS----> */
 
-
-
+.review-grid {
+  display: grid;
+  padding: 1em 0 1em;
 
 /* <----FOOTER----> */
 
@@ -380,5 +381,10 @@ article > img {
     transform-origin: center;
     transition: transform ease-in-out 250ms;
   }
-
 } */
+
+
+/* <----REVIEWS----> */
+
+/* .review-grid {
+  display: flex; */
